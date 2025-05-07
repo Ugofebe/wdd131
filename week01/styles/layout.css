@@ -46,8 +46,8 @@ body {
     grid-column: 1 / 4;
   }
   
-  .left-sidebar,
-  .right-sidebar {
+  .main-content,
+  .aside-content{
     padding: 1rem;
   }
   
