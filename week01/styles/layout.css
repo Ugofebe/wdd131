@@ -10,18 +10,13 @@ body {
     grid-column: 1 / 4;
   }
 
-  nav {
-    /* padding: 1rem; */
+  nav ul {
+    list-style-type: none;
     display: flex;
-    gap: 1rem; /* Add space between nav links */
-    align-items: center;
-    justify-content: space-evenly;
-    list-style: none;
-    padding: 20px;
-    margin: 0px;
-    background-color: #ed1a3d;
-      
-  }
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+}
   nav a {
     color: white;
     text-decoration: none;
