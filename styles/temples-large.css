@@ -1,0 +1,34 @@
+/* Large View Styles */
+@media (min-width: 640px) {
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        position: static; /* Reset for desktop */
+        width: auto;
+        display: flex;
+        background-color: transparent;
+    }
+
+    .navigation ul {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .temple-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Additional large screen styles */
+@media (min-width: 1024px) {
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

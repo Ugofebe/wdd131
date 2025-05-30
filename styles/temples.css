@@ -1,0 +1,145 @@
+/* Base Styles */
+:root {
+    --primary-color: #003366;
+    --secondary-color: #6699cc;
+    --accent-color: #ff9933;
+    --text-color: #333333;
+    --background-color: #f5f5f5;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* This is only an example to consider */
+main { 
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin: 1.5rem 0;
+}
+
+/* Navigation */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.navigation {
+    display: none;
+    position: absolute; /* Change from static to absolute */
+    top: 100%; /* Position below the header */
+    right: 0;
+    width: 50%;
+    background-color: var(--primary-color);
+    z-index: 1000;
+    padding: 0 1rem;
+    box-sizing: border-box; 
+
+}
+/* li{
+    right: 0;
+} */
+.navigation.open {
+    display: block;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li {
+    padding: 0.5rem 0;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+}
+
+.navigation a:hover {
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+}
+
+/* Temple Grid */
+.temple-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+figure {
+    margin: 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    text-align: center;
+    padding: 0.5rem;
+    background-color: white;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
