@@ -39,7 +39,7 @@ header h1 {
 header img {
     width: 100%;
     height: auto;
-    max-height: 1000px;
+    max-height: 7500px;
     object-fit: cover;
     /* border-radius: 8px; */
 }
