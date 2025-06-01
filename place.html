@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Nigeria</title>
+    <meta name="description" content="Discover the vibrant culture and landscapes of Nigeria">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css" media="(min-width: 768px)">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Nigeria</h1>
+        <picture>
+            <source srcset="images/nigeria-large.webp" media="min-width: 1000px">
+            <img src="images/nigeria-small.webp" alt="Nigeria Flag Bearer" width="500" height="200">
+        </picture>
+    </header>
+
+    <main>
+        <section class="data-section">
+            <h2>Country Data</h2>
+            <div class="data-grid">
+                <div class="data-item">
+                    <span class="label">Capital:</span>
+                    <span class="value">Abuja</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Population:</span>
+                    <span class="value">223.8 million</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Languages:</span>
+                    <span class="value">English (official), Hausa, Yoruba, Igbo</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Currency:</span>
+                    <span class="value">Naira (₦)</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Area:</span>
+                    <span class="value">923,768 km²</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">GDP per capita:</span>
+                    <span class="value">$2,085</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="weather-section">
+            <h2>Weather <span class="weather-icon"></span></h2>
+            <img src="images/weather-icon.svg" alt="Weather icon" class="weather-icon-below">
+            <div class="weather-grid">
+                <div class="weather-item">
+                    <span class="label">Current Temp:</span>
+                    <span class="value">32°C</span>
+                </div>
+                <div class="weather-item">
+                    <span class="label">Wind Speed:</span>
+                    <span class="value">8 km/h</span>
+                </div>
+                <div class="weather-item">
+                    <span class="label">Wind Chill:</span>
+                    <span class="value" id="windchill">N/A</span>
+                </div>
+                <div class="weather-item">
+                    <span class="label">Humidity:</span>
+                    <span class="value">65%</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌍 Ugochukwu Febechukwu 🌍 Enugu, Nigeria</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

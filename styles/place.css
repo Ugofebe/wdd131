@@ -1,0 +1,111 @@
+:root {
+    --primary-color: #008751; /* Nigerian green */
+    --secondary-color: #FFFFFF; /* White */
+    --accent-color: #000000; /* Black */
+    --text-color: #333333;
+    --background-color: #f5f5f5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 0rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    max-height: 1000px;
+    object-fit: cover;
+    /* border-radius: 8px; */
+}
+
+main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: var(--primary-color);
+    margin: 1rem 0;
+    padding-bottom: 0.5rem;
+    /* border-bottom: 2px solid var(--accent-color); */
+}
+.weather-icon-below {
+    display: block;
+    width: 48px; /* Adjust size as needed */
+    height: 48px;
+    margin: 0 auto 1rem; /* Centers the icon and adds space below */
+}
+
+.data-section, .weather-section {
+    margin-bottom: 2rem;
+}
+
+.data-grid, .weather-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+}
+
+.data-item, .weather-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.label {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.value {
+    color: var(--text-color);
+}
+
+.weather-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../images/weather-icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
