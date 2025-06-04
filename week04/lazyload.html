@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album</title>
+    <meta name="description" content="This page describes a page contain a picture album of different images and it is for the course WDD 131 – Dynamic Web Fundamentals.">
+    <meta name="author" content="Ugochukwu Febechukwu">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
+</head>
+<body>
+    <!-- <header>
+        <div class="header-content">
+            <h1>Album</h1>
+            the equiv helps add the hambutton 
+            <button id="menu" aria-label="Navigation Menu">&equiv;</button> 
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Old</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Large</a></li>
+                    <li><a href="#">Small</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> -->
+
+    <main>
+        <h1>Beautiful Images</h1>
+        <div class="temple-grid">
+            <figure>
+                <img src="images/profile.jpeg" alt="Engineer Ugochukwu Febechukwu" loading = "lazy" width="400" height="600">
+                <figcaption>Engineer Ugochukwu Febechukwu</figcaption>
+            </figure>
+            <figure>
+                <img src="images/enugu.jpg" alt="Enugu State" loading = "lazy" width="400" height="600">
+                <figcaption>My Hometown</figcaption>
+            </figure>
+            <figure>
+                <img src="images/nigeria-large.webp" alt="Nigera " loading = "lazy">
+                <figcaption>My Country</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rafting1.jpg" alt="Adventure i" loading = "lazy">
+                <figcaption>Adventure i</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rafting2.jpg" alt="Adventure ii" loading = "lazy">
+                <figcaption>Adventure ii</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rafting3.jpg" alt="Adventure iii" loading = "lazy">
+                <figcaption>Adventure iii</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌍 Ugochukwu Febechukwu 🌍 Enugu, Nigeria</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
