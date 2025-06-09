@@ -1,0 +1,38 @@
+/* Color Schema & Typography */
+:root {
+    --primary: #4A6BFF; /* Bold blue (headings, buttons) */
+    --secondary: #FF6B6B; /* Accent red (highlights, CTAs) */
+    --dark: #2E3440; /* Dark gray (text) */
+    --light: #F8F9FA; /* Light background */
+    --accent: #FFD166; /* Yellow (secondary accents) */
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--dark);
+    background-color: var(--light);
+    margin: 0;
+    padding: 20px;
+}
+.logo-image {
+    max-width: 30%;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+}
+h1, h2, h3 {
+    font-family: 'Boldonese', serif;
+    color: var(--primary);
+}
+.color-swatch {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 8px;
+}
+.wireframe-img {
+    max-width: 100%;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+}
+  
