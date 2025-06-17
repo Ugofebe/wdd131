@@ -1,7 +1,6 @@
 // Get current year for copyright
 const currentYear = new Date().getFullYear();
 document.getElementById('currentyear').textContent = currentYear;
-
 // Get last modified date
 const lastModified = document.lastModified;
 document.getElementById('lastModified').textContent += lastModified;
@@ -176,5 +175,5 @@ navLinks.forEach(link => {
 displayTemples();
 
 // Footer updates
-document.getElementById('currentyear').textContent = new Date().getFullYear();
+
 document.getElementById('lastModified').textContent = document.lastModified;

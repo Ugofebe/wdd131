@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/studiimate.css">
+    <script src="scripts/studiimate.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studiimate - AI-Powered Learning Assistant</title>
+    <meta name="description" content="This page is the homepage of an App called Studiimate that aids learning amongst Nigerian Universities.">
+    <meta name="author" content="Ugochukwu Febechukwu">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/studiimate-logo.png" alt="StudiiMate logo">
+            </a>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation menu">
+                <span class="menu-icon">☰</span>
+                <span class="close-icon" style="display:none;">✕</span>
+            </button>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="demo.html">Demo</a></li>
+                    <li><a href="signup.html" class="btn">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="demo-section">
+            <div class="container">
+                <h1>See Studiimate in Action</h1>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com" frameborder="0" allowfullscreen loading="lazy"></iframe>
+                </div>
+                
+                <div class="interactive-demo">
+                    <h2>Try It Yourself</h2>
+                    <div class="chat-interface">
+                        <div class="chat-messages" id="chat-messages">
+                            <!-- Messages will appear here -->
+                        </div>
+                        <div class="topic-cards">
+                            <button class="topic-card" data-topic="calculus">Calculus</button>
+                            <button class="topic-card" data-topic="biology">Biology</button>
+                            <button class="topic-card" data-topic="programming">Programming</button>
+                        </div>
+                        <div class="chat-input">
+                            <input type="text" id="user-message" placeholder="Ask a question...">
+                            <button id="send-btn">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <p>StudiiMate</p> 
+                    <img class="footer-logo" src="images/studiimate-logo.png" alt="StudiiMate logo">
+                </div>
+                <div class="footer-links">
+                    <a href="features.html">Features</a>
+                    <a href="demo.html">Demo</a>
+                    <a href="signup.html">Sign Up</a>
+                    <a href="references.html">References</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://twitter.com/ugo_ebuka"><img src="images/twitter.webp" alt="Twitter" loading="lazy"></a>
+                    <a href="https://instagram.com"><img src="images/instagram.webp" alt="Instagram" loading="lazy"></a>
+                    <a href="https://facebook.com"><img src="images/facebook.webp" alt="Facebook" loading="lazy"></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="currentyear"></span> Studiimate. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

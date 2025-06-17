@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/studiimate.css">
+    <script src="scripts/studiimate.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studiimate - AI-Powered Learning Assistant</title>
+    <meta name="description" content="This page is the homepage of an App called Studiimate that aids learning amongst Nigerian Universities.">
+    <meta name="author" content="Ugochukwu Febechukwu">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/studiimate-logo.png" alt="StudiiMate logo">
+            </a>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation menu">
+                <span class="menu-icon">☰</span>
+                <span class="close-icon" style="display:none;">✕</span>
+            </button>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="demo.html">Demo</a></li>
+                    <li><a href="signup.html" class="btn">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                    <source media="(min-width: 1024px)" srcset="images/hero-large.webp">
+                    <source media="(min-width: 640px)" srcset="images/hero-medium.webp">
+                    <img src="images/hero-small.webp" alt="Studiimate app interface" class="hero-image" loading="lazy">
+            </picture>
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Your AI-Powered Study Mate</h1>
+                    <p>
+                        Personalized learning assistant that aligns with your university 
+                        syllabus to help you study smarter, not harder. This is a powerful
+                        tool that aids learning in better ways than our traditional forms of
+                        learning in Africa as a whole. We live in a fast paced world and Studiimate 
+                        brings you to the forefront of top tier learning and technology in the Education Sector.
+                        As a great man once said that "We Rise By Lifting Others". We invite you to join our Community.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="signup.html" class="btn btn-primary">Join Beta</a>
+                        <a href="demo.html" class="btn btn-secondary">See Demo</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/none-yet.webp" alt="Studiimate mobile app" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section class="features-overview">
+            <div class="container">
+                <h2>Why Choose Studiimate?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📚</div>
+                        <h3>Syllabus-Aligned</h3>
+                        <p>AI trained specifically on your course materials for relevant answers.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💬</div>
+                        <h3>Smart Topic Chat</h3>
+                        <p>Ask questions naturally or select from suggested topics.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📝</div>
+                        <h3>Exam Prep</h3>
+                        <p>Coming soon: Past questions and mock exams.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial">
+            <div class="container">
+                <h2>What Students Say</h2>
+                <div class="testimonial-content" id="testimonial">
+                    <!-- JavaScript will populate this -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <p>StudiiMate</p> 
+                    <img class="footer-logo" src="images/studiimate-logo.png" alt="StudiiMate logo">
+                </div>
+                <div class="footer-links">
+                    <a href="features.html">Features</a>
+                    <a href="demo.html">Demo</a>
+                    <a href="signup.html">Sign Up</a>
+                    <a href="references.html">References</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://twitter.com/ugo_ebuka"><img src="images/twitter.webp" alt="Twitter" loading="lazy"></a>
+                    <a href="https://instagram.com"><img src="images/instagram.webp" alt="Instagram" loading="lazy"></a>
+                    <a href="https://facebook.com"><img src="images/facebook.webp" alt="Facebook" loading="lazy"></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="currentyear"></span> Studiimate. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

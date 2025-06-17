@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/studiimate.css">
+    <script src="scripts/studiimate.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studiimate - AI-Powered Learning Assistant</title>
+    <meta name="description" content="This page is the homepage of an App called Studiimate that aids learning amongst Nigerian Universities.">
+    <meta name="author" content="Ugochukwu Febechukwu">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/studiimate-logo.png" alt="StudiiMate logo">
+            </a>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation menu">
+                <span class="menu-icon">☰</span>
+                <span class="close-icon" style="display:none;">✕</span>
+            </button>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="demo.html">Demo</a></li>
+                    <li><a href="signup.html" class="btn">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="signup-section">
+            <div class="container">
+                <div class="signup-form-container">
+                    <h1>Join Our Beta Program</h1>
+                    <p>Be among the first to experience Studiimate</p>
+                    
+                    <form id="beta-signup-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="university">University</label>
+                            <select id="university" required>
+                                <option value="">Select your university</option>
+                                <option value="harvard">Harvard University</option>
+                                <option value="mit">Massachusetts Institute of Technology</option>
+                                <option value="stanford">Stanford University</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="major">Major/Field of Study</label>
+                            <input type="text" id="major" required>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Join Beta</button>
+                    </form>
+                    
+                    <div class="signup-success" id="signup-success" style="display: none;">
+                        <h2>Thank You!</h2>
+                        <p>We've added you to our beta waitlist. You'll hear from us soon!</p>
+                    </div>
+                </div>
+                
+                <div class="signup-benefits">
+                    <h2>Beta Tester Benefits</h2>
+                    <ul>
+                        <li>Early access to Studiimate</li>
+                        <li>Free premium features for 6 months</li>
+                        <li>Direct input on product development</li>
+                        <li>Exclusive community access</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <p>StudiiMate</p> 
+                    <img class="footer-logo" src="images/studiimate-logo.png" alt="StudiiMate logo">
+                </div>
+                <div class="footer-links">
+                    <a href="features.html">Features</a>
+                    <a href="demo.html">Demo</a>
+                    <a href="signup.html">Sign Up</a>
+                    <a href="references.html">References</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://twitter.com/ugo_ebuka"><img src="images/twitter.webp" alt="Twitter" loading="lazy"></a>
+                    <a href="https://instagram.com"><img src="images/instagram.webp" alt="Instagram" loading="lazy"></a>
+                    <a href="https://facebook.com"><img src="images/facebook.webp" alt="Facebook" loading="lazy"></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="currentyear"></span> Studiimate. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
